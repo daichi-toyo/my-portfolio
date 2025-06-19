@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己紹介サイト</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: white;
+            font-weight: bold;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            font-weight: 300;
+        }
+
+        .info-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            border-left: 5px solid #667eea;
+        }
+
+        .info-section h2 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            font-weight: 600;
+        }
+
+        .info-section p {
+            color: #555;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .hobby-list, .food-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .tag {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .profile-image {
+                width: 100px;
+                height: 100px;
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-image">
+            👤
+        </div>
+        
+        <h1>田中太郎</h1>
+        
+        <div class="info-section">
+            <h2>趣味</h2>
+            <div class="hobby-list">
+                <span class="tag">読書</span>
+                <span class="tag">ゲーム</span>
+                <span class="tag">映画鑑賞</span>
+                <span class="tag">旅行</span>
+            </div>
+        </div>
+        
+        <div class="info-section">
+            <h2>好きな食べ物</h2>
+            <div class="food-list">
+                <span class="tag">ラーメン</span>
+                <span class="tag">寿司</span>
+                <span class="tag">カレー</span>
+                <span class="tag">パスタ</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
