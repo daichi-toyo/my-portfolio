@@ -14,7 +14,7 @@
 <body>
     <div class="glass-card">
         <div class="profile-image">
-            <i class="fa-solid fa-user"></i>
+            <img src="profile.jpg" alt="プロフィール画像" class="profile-photo" onerror="this.style.display='none'">
         </div>
         <h1>田中太郎</h1>
         <div class="info-section">
@@ -35,6 +35,20 @@
                 <span class="tag"><i class="fa-solid fa-pizza-slice"></i> パスタ</span>
             </div>
         </div>
+        <!-- お問い合わせフォーム -->
+        <form class="contact-form">
+            <h2><i class="fa-regular fa-envelope"></i> お問い合わせ</h2>
+            <div class="form-group">
+                <input type="text" name="name" placeholder="お名前" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="メールアドレス" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" placeholder="メッセージ" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">送信</button>
+        </form>
     </div>
 </body>
 </html>
